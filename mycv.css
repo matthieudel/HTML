@@ -1,0 +1,110 @@
+
+
+h1 {
+              color:#f30808; 
+              font-family:verdana;
+              font-size:180%;
+              font-style:italic;
+              
+              
+          }
+
+h2 {          color:#0c0c0c; 
+              font-size:400%;
+              font-weight:bold;
+              width: 700px; /* On a indiqué une largeur (obligatoire) */
+              margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */ 
+
+}
+
+h3 {          color:#0c0c0c; 
+              font-size:250%;
+              font-weight:bold;
+              width: 700px; /* On a indiqué une largeur (obligatoire) */
+              margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */ 
+
+}
+
+p {           
+
+}
+
+section {
+    background-color: #ffc7c7;
+    margin: 20px;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+section:hover {
+    background-color: #c02244;
+}
+
+aside {
+    float: right;
+    
+}
+
+.slow-in-out{
+    transition: all 1.5s ease-in-out;
+}
+
+.fast-linear{
+    transition: all 0.2s linear;
+}
+
+img {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 200px;
+}
+img:hover { 
+    width: 400px;
+}
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 350px;
+    grid-template-areas: 
+      "header header sidebar"
+      "main main2 sidebar"
+      "main main2 sidebar"
+      "footer footer footer ";
+    grid-template-rows: 150px 1fr 1fr 100px;
+    height: 100vh;
+  }
+  
+.item-a {
+      grid-area: header;
+      background-color: powderblue;">;
+  }
+
+
+.item-b {
+      grid-area: main;
+      background-color: powderblue;">;
+  }
+
+.item-e {
+    grid-area: main2;
+    background-color: powderblue;">;
+}
+
+.item-c {
+      grid-area: sidebar;
+      background-color: #c02244;
+  }
+.item-d {
+      grid-area: footer;
+      background-color: #4f8ddd;
+  }
+
+
+
+  body {
+    font-family: 'Raleway', sans-serif;
+}
